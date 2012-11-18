@@ -39,7 +39,7 @@ public class ROMLoader {
 	}
 
 	public static Cartridge load(URL url) {
-		InputStream stream = null;
+		InputStream stream = Combat.bin;
 		try {
 			System.out.println("Loading Cartridge from: " + url);
 			URLConnection conn = url.openConnection();
